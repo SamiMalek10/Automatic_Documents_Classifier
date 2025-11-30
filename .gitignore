@@ -1,0 +1,16 @@
+# Environnements Python
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+
+# Modèles lourds
+models/cv/resnet50.pth
+models/nlp/camembert/
+
+# Fichiers temporaires / IDE
+.vscode/
+.idea/
+*.log
+.DS_Store

@@ -1,0 +1,42 @@
+# Structure des dossiers du projet
+"""
+document_classifier/
+├── models/                  # Modèles sauvegardés
+│   ├── cv/
+│   ├── nlp/
+│   └── fusion/
+├── data/
+│   ├── raw/                # PDFs d'entrée
+│   ├── processed/          # Images extraites
+│   └── output/             # Documents classés
+│       ├── identite/
+│       ├── releve_bancaire/
+│       ├── facture_electricite/
+│       ├── facture_eau/
+│       ├── document_employeur/
+│       └── a_verifier/
+├── src/
+│   ├── config/
+│   │   └── config.py
+│   ├── preprocessing/
+│   │   ├── pdf_processor.py
+│   │   └── image_enhancer.py
+│   ├── cv_module/
+│   │   ├── template_detector.py
+│   │   └── hybrid_classifier.py
+│   ├── nlp_module/
+│   │   ├── ocr_extractor.py
+│   │   ├── pattern_matcher.py
+│   │   └── camembert_classifier.py
+│   ├── fusion/
+│   │   └── multimodal_fusion.py
+│   └── utils/
+│       ├── offline_manager.py
+│       └── logger.py
+├── scripts/
+│   ├── setup_offline.py
+│   └── train_models.py
+├── main.py
+├── requirements.txt
+└── README.md
+"""
