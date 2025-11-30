@@ -296,6 +296,7 @@ Projet académique - INDIA S5 - Pr. CHEFIRA
 
 ## 🆘 Support
 
+Voir la 1ère version du rapport dans : report/Rapport_davancement_1_-_Classification_de_Documents_Administratifs.pdf
 En cas de problème:
 
 1. Vérifier les logs dans `logs/`
