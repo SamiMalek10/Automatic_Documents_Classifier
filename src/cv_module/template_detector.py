@@ -1,96 +1,151 @@
-from pdf2image import convert_from_path
 import cv2
 import numpy as np
-from PIL import Image
-import logging
+from src.config.config import TEMPLATE_FEATURES
 
-class PDFProcessor:
-    """Conversion et prétraitement des PDFs"""
+class TemplateDetector:
+    """Détecteur de features structurelles pour gabarits"""
     
     def __init__(self):
-        self.logger = logging.getLogger(__name__)
+        # Chargement du détecteur de visages pour photos
+        self.face_cascade = cv2.CascadeClassifier(
+            cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'
+        )
     
-    def pdf_to_images(self, pdf_path, dpi=300):
-        """Convertit un PDF en liste d'images"""
-        try:
-            images = convert_from_path(pdf_path, dpi=dpi)
-            self.logger.info(f"✅ PDF converti: {len(images)} page(s)")
-            return [np.array(img) for img in images]
-        except Exception as e:
-            self.logger.error(f"❌ Erreur conversion PDF: {e}")
-            return []
+    def compute_aspect_ratio(self, image):
+        """Calcule le ratio hauteur/largeur"""
+        h, w = image.shape[:2]
+        return h / w if w > 0 else 0
     
-    def enhance_image(self, image):
-        """Améliore la qualité de l'image pour l'OCR"""
-        # Conversion en niveaux de gris
+    def detect_photo(self, image):
+        """Détecte la présence d'une photo"""
         if len(image.shape) == 3:
             gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
         else:
             gray = image
         
-        # Débruitage
-        denoised = cv2.fastNlMeansDenoising(gray)
-        
-        # Amélioration du contraste (CLAHE)
-        clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
-        enhanced = clahe.apply(denoised)
-        
-        # Binarisation adaptative
-        binary = cv2.adaptiveThreshold(
-            enhanced, 255, 
-            cv2.ADAPTIVE_THRESH_GAUSSIAN_C, 
-            cv2.THRESH_BINARY, 11, 2
+        faces = self.face_cascade.detectMultiScale(
+            gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30)
         )
         
-        return binary
+        return len(faces) > 0, len(faces)
     
-    def correct_skew(self, image):
-        """Corrige l'inclinaison de l'image"""
-        coords = np.column_stack(np.where(image > 0))
-        if len(coords) == 0:
-            return image
-        
-        angle = cv2.minAreaRect(coords)[-1]
-        
-        if angle < -45:
-            angle = -(90 + angle)
+    def detect_table_structure(self, image):
+        """Détecte une structure tabulaire"""
+        if len(image.shape) == 3:
+            gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
         else:
-            angle = -angle
+            gray = image
         
-        # Rotation
-        (h, w) = image.shape[:2]
-        center = (w // 2, h // 2)
-        M = cv2.getRotationMatrix2D(center, angle, 1.0)
-        rotated = cv2.warpAffine(
-            image, M, (w, h),
-            flags=cv2.INTER_CUBIC, 
-            borderMode=cv2.BORDER_REPLICATE
+        # Détection de lignes horizontales
+        edges = cv2.Canny(gray, 50, 150, apertureSize=3)
+        lines_h = cv2.HoughLinesP(
+            edges, 1, np.pi/180, 100, 
+            minLineLength=100, maxLineGap=10
         )
         
-        return rotated
+        # Détection de lignes verticales
+        lines_v = cv2.HoughLinesP(
+            edges, 1, np.pi/2, 100,
+            minLineLength=100, maxLineGap=10
+        )
+        
+        h_count = len(lines_h) if lines_h is not None else 0
+        v_count = len(lines_v) if lines_v is not None else 0
+        
+        # Si beaucoup de lignes H et V -> structure tabulaire
+        has_table = h_count > 3 and v_count > 3
+        
+        return has_table, h_count, v_count
     
-    def preprocess_for_ocr(self, image):
-        """Pipeline complet de prétraitement pour OCR"""
-        enhanced = self.enhance_image(image)
-        corrected = self.correct_skew(enhanced)
-        return corrected
+    def compute_text_density(self, image):
+        """Calcule la densité de texte"""
+        if len(image.shape) == 3:
+            gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+        else:
+            gray = image
+        
+        # Binarisation
+        _, binary = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+        
+        # Pourcentage de pixels texte
+        text_pixels = np.sum(binary > 0)
+        total_pixels = binary.size
+        
+        density = text_pixels / total_pixels if total_pixels > 0 else 0
+        
+        return density
     
-    def preprocess_for_cv(self, image, target_size=(224, 224)):
-        """Prétraitement pour le modèle CV"""
-        # Redimensionnement
-        resized = cv2.resize(image, target_size)
+    def detect_signature_zone(self, image):
+        """Détecte les zones potentielles de signature"""
+        if len(image.shape) == 3:
+            gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+        else:
+            gray = image
         
-        # Normalisation ImageNet
-        normalized = resized.astype(np.float32) / 255.0
-        mean = np.array([0.485, 0.456, 0.406])
-        std = np.array([0.229, 0.224, 0.225])
+        # Recherche de zones avec texture particulière (signature manuscrite)
+        # Utilisation de la variance locale
+        kernel_size = 15
+        mean = cv2.blur(gray, (kernel_size, kernel_size))
+        sqr_mean = cv2.blur(gray**2, (kernel_size, kernel_size))
+        variance = sqr_mean - mean**2
         
-        if len(normalized.shape) == 2:
-            normalized = cv2.cvtColor(normalized, cv2.COLOR_GRAY2RGB)
+        # Zones à forte variance = potentiellement manuscrites
+        threshold = np.percentile(variance, 95)
+        signature_mask = variance > threshold
         
-        normalized = (normalized - mean) / std
+        signature_ratio = np.sum(signature_mask) / signature_mask.size
         
-        # Transpose pour PyTorch (H, W, C) -> (C, H, W)
-        normalized = np.transpose(normalized, (2, 0, 1))
+        return signature_ratio > 0.05, signature_ratio
+    
+    def extract_features(self, image):
+        """Extrait toutes les features structurelles"""
+        features = {
+            'aspect_ratio': self.compute_aspect_ratio(image),
+            'has_photo': self.detect_photo(image)[0],
+            'photo_count': self.detect_photo(image)[1],
+            'has_table': self.detect_table_structure(image)[0],
+            'horizontal_lines': self.detect_table_structure(image)[1],
+            'vertical_lines': self.detect_table_structure(image)[2],
+            'text_density': self.compute_text_density(image),
+            'has_signature': self.detect_signature_zone(image)[0],
+            'signature_ratio': self.detect_signature_zone(image)[1]
+        }
         
-        return normalized
+        return features
+    
+    def match_template(self, features, class_name):
+        """Calcule le score de correspondance avec un gabarit"""
+        if class_name not in TEMPLATE_FEATURES:
+            return 0.0
+        
+        template = TEMPLATE_FEATURES[class_name]
+        score = 0.0
+        total_weight = 0.0
+        
+        # Vérification aspect ratio
+        if 'aspect_ratio' in template:
+            min_r, max_r = template['aspect_ratio']
+            if min_r <= features['aspect_ratio'] <= max_r:
+                score += 0.3
+            total_weight += 0.3
+        
+        # Vérification photo
+        if template.get('has_photo', False):
+            if features['has_photo']:
+                score += 0.3
+            total_weight += 0.3
+        
+        # Vérification table
+        if template.get('has_table', False):
+            if features['has_table']:
+                score += 0.2
+            total_weight += 0.2
+        
+        # Vérification densité texte
+        if 'text_density' in template:
+            min_d, max_d = template['text_density']
+            if min_d <= features['text_density'] <= max_d:
+                score += 0.2
+            total_weight += 0.2
+        
+        return score / total_weight if total_weight > 0 else 0.0

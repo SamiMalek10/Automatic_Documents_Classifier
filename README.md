@@ -13,6 +13,7 @@ Système intelligent de classification offline utilisant Computer Vision et NLP 
 ## 🏗️ Architecture
 
 ### Pipeline Multimodal
+
 ```
 PDF → Images → [CV Module] + [NLP Module] → Fusion → Classification
                     ↓              ↓
@@ -39,18 +40,69 @@ PDF → Images → [CV Module] + [NLP Module] → Fusion → Classification
 ### Installation Tesseract
 
 **Ubuntu/Debian:**
+
 ```bash
 sudo apt-get update
 sudo apt-get install tesseract-ocr tesseract-ocr-fra
 ```
 
 **macOS:**
+
 ```bash
 brew install tesseract tesseract-lang
 ```
 
 **Windows:**
-Télécharger depuis [UB-Mannheim](https://github.com/UB-Mannheim/tesseract/wiki)
+1. **Télécharge Tesseract** depuis :  
+   👉 [https://github.com/UB-Mannheim/tesseract/wiki](https://github.com/UB-Mannheim/tesseract/wiki)  
+   → Pendant l’installation, **coche la langue `French (fra)`** si proposée.
+
+2. **Vérifie que le modèle français est présent** :  
+   Va dans :  
+   ```
+   C:\Program Files\Tesseract-OCR\tessdata\
+   ```  
+   Assure-toi que le fichier **`fra.traineddata`** existe.
+
+   ❌ **S’il manque**, télécharge-le ici :  
+   👉 [https://github.com/tesseract-ocr/tessdata/raw/main/fra.traineddata](https://github.com/tesseract-ocr/tessdata/raw/main/fra.traineddata)  
+   → Enregistre-le directement dans le dossier `tessdata`.
+
+3. **Ajoute Tesseract au PATH** :  
+   - Ouvre **Variables d’environnement** (`sysdm.cpl` → "Variables d’environnement")
+   - Dans **Variables système**, édite `Path`
+   - Ajoute :  
+     ```
+     C:\Program Files\Tesseract-OCR
+     ```
+   - Redémarre ton terminal.
+
+---
+
+### Installation Poppler (Windows)
+
+1. **Télécharge Poppler** depuis :  
+   👉 [https://github.com/oschwartz10612/poppler-windows/releases](https://github.com/oschwartz10612/poppler-windows/releases)  
+   (ex: `poppler-25.07.0_x64.7z`)
+
+2. **Décompresse** le fichier, par exemple dans :  
+   ```
+   C:\poppler-25.07.0_x64\
+   ```
+
+3. **Ajoute le dossier `bin` au PATH** :  
+   Ajoute cette ligne dans les **Variables d’environnement → Path** :
+   ```
+   C:\poppler-25.07.0_x64\Library\bin
+   ```
+   → Redémarre ton terminal.
+
+4. **Vérifie** avec :
+   ```powershell
+   pdfinfo -v
+   ```
+
+---
 
 ### Setup du Projet
 
@@ -70,10 +122,34 @@ python scripts/setup_offline.py
 ```
 
 Ce script va:
+
 - Installer toutes les dépendances Python
 - Télécharger ResNet50 et CamemBERT
 - Créer la structure de dossiers
 - Vérifier l'environnement
+
+
+### Génération de PDFs factices (pour tester)
+
+Un script est fourni pour générer **10 PDFs par classe** (50 au total) avec des templates logiques :
+
+```bash
+python scripts/fake_pdfs_generator_test.py
+```
+
+Cela créera une structure dans `data/raw/` :
+```
+data/raw/
+├── identity_card/
+├── bank_statement/
+├── electricity_bill/
+├── water_bill/
+└── employer_doc/
+```
+
+> ✅ Idéal pour tester la pipeline sans documents réels.
+
+---
 
 ## 💻 Utilisation
 
@@ -81,7 +157,7 @@ Ce script va:
 
 ```bash
 # Placer vos PDFs dans data/raw/
-# Puis lancer la classification:
+# Puis lancer la classification: 
 python main.py --input data/raw --output data/output
 ```
 
@@ -97,6 +173,7 @@ python main.py \
 ### Résultats
 
 Les documents classés seront dans:
+
 ```
 data/output/
 ├── identite/
@@ -107,10 +184,19 @@ data/output/
 ├── a_verifier/          # Documents ambigus
 └── classification_report.json
 ```
+---
+
+> ℹ️ **Conseil** : Si tu utilises les PDFs factices, tu peux directement lancer :
+> ```bash
+> python scripts/fake_pdfs_generator_test.py
+> python main.py --input data/raw --output data/output
+> ```
+
 
 ## 📊 Métriques et Performances
 
 ### Objectifs
+
 - Accuracy par classe: **> 90%**
 - Temps moyen: **< 5s par document**
 - Taux de rejet: **< 10%**
@@ -118,6 +204,7 @@ data/output/
 ### Rapport de Classification
 
 Le fichier `classification_report.json` contient:
+
 - Classe prédite et confiance
 - Scores CV et NLP individuels
 - Chemin de décision (fusion)
@@ -192,15 +279,16 @@ document_classifier/
 ### Benchmarking
 
 Comparer les performances des modèles:
+
 ```bash
 python scripts/benchmark_models.py
 ```
 
 ## 👥 Équipe
 
-- **Responsable**: [Nom]
-- **Membre 1**: [Nom]
-- **Membre 2**: [Nom]
+- **Responsable**: **Zaynab ER-RGHA**Y
+- **Membre 1**: **Sami Malek**
+- **Membre 2**: **Bilal Lahfari**
 
 ## 📄 Licence
 
@@ -209,6 +297,7 @@ Projet académique - INDIA S5 - Pr. CHEFIRA
 ## 🆘 Support
 
 En cas de problème:
+
 1. Vérifier les logs dans `logs/`
 2. Consulter la documentation
 3. Ouvrir une issue sur Git
@@ -216,3 +305,4 @@ En cas de problème:
 ---
 
 **Note**: Ce système fonctionne 100% offline après le setup initial.
+

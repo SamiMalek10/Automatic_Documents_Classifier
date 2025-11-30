@@ -1,5 +1,5 @@
 import numpy as np
-from config.config import FUSION_CONFIG, CLASSES
+from src.config.config import FUSION_CONFIG, CLASSES
 import logging
 
 class MultimodalFusion:

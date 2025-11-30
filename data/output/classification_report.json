@@ -1,0 +1,1652 @@
+{
+  "data\\raw\\bank_statement\\bank_statement_001.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7997826086956522,
+        "text_length": 193,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 8.777820348739624,
+    "pages_count": 1
+  },
+  "data\\raw\\bank_statement\\bank_statement_002.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.805,
+        "text_length": 157,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 7.890270233154297,
+    "pages_count": 1
+  },
+  "data\\raw\\bank_statement\\bank_statement_003.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.7142857142857143,
+        "decision_path": "weighted_voting",
+        "rejected": false,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.806046511627907,
+        "text_length": 180,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 10.476935386657715,
+    "pages_count": 1
+  },
+  "data\\raw\\bank_statement\\bank_statement_004.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.8222680412371135,
+        "text_length": 205,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 10.283082008361816,
+    "pages_count": 1
+  },
+  "data\\raw\\bank_statement\\bank_statement_005.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.7142857142857143,
+        "decision_path": "weighted_voting",
+        "rejected": false,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7992045454545454,
+        "text_length": 194,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 13.285539150238037,
+    "pages_count": 1
+  },
+  "data\\raw\\bank_statement\\bank_statement_006.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.802063492063492,
+        "text_length": 132,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 11.311128616333008,
+    "pages_count": 1
+  },
+  "data\\raw\\bank_statement\\bank_statement_007.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.7142857142857143,
+        "decision_path": "weighted_voting",
+        "rejected": false,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7875714285714285,
+        "text_length": 147,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 8.830736875534058,
+    "pages_count": 1
+  },
+  "data\\raw\\bank_statement\\bank_statement_008.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7890425531914893,
+        "text_length": 206,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 9.014234066009521,
+    "pages_count": 1
+  },
+  "data\\raw\\bank_statement\\bank_statement_009.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.8020212765957447,
+        "text_length": 197,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 9.235256910324097,
+    "pages_count": 1
+  },
+  "data\\raw\\bank_statement\\bank_statement_010.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7772857142857142,
+        "text_length": 151,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 8.605772733688354,
+    "pages_count": 1
+  },
+  "data\\raw\\electricity_bill\\electricity_bill_001.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.8038235294117646,
+        "text_length": 220,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 8.980141401290894,
+    "pages_count": 1
+  },
+  "data\\raw\\electricity_bill\\electricity_bill_002.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7613636363636364,
+        "text_length": 103,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 9.944591760635376,
+    "pages_count": 1
+  },
+  "data\\raw\\electricity_bill\\electricity_bill_003.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.7142857142857143,
+        "decision_path": "weighted_voting",
+        "rejected": false,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7914285714285714,
+        "text_length": 130,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 11.280887842178345,
+    "pages_count": 1
+  },
+  "data\\raw\\electricity_bill\\electricity_bill_004.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7747580645161289,
+        "text_length": 263,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 13.901100158691406,
+    "pages_count": 1
+  },
+  "data\\raw\\electricity_bill\\electricity_bill_005.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.78,
+        "text_length": 241,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 12.995158672332764,
+    "pages_count": 1
+  },
+  "data\\raw\\electricity_bill\\electricity_bill_006.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7680459770114942,
+        "text_length": 183,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 11.554352283477783,
+    "pages_count": 1
+  },
+  "data\\raw\\electricity_bill\\electricity_bill_007.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7708080808080808,
+        "text_length": 216,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 9.192167520523071,
+    "pages_count": 1
+  },
+  "data\\raw\\electricity_bill\\electricity_bill_008.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7642222222222221,
+        "text_length": 94,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 8.810826539993286,
+    "pages_count": 1
+  },
+  "data\\raw\\electricity_bill\\electricity_bill_009.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7943809523809524,
+        "text_length": 231,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 9.09555959701538,
+    "pages_count": 1
+  },
+  "data\\raw\\electricity_bill\\electricity_bill_010.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7787288135593221,
+        "text_length": 247,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 13.141500234603882,
+    "pages_count": 1
+  },
+  "data\\raw\\employer_doc\\employer_doc_001.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7887837837837837,
+        "text_length": 162,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 13.92808723449707,
+    "pages_count": 1
+  },
+  "data\\raw\\employer_doc\\employer_doc_002.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.785,
+        "text_length": 124,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 12.761085271835327,
+    "pages_count": 1
+  },
+  "data\\raw\\employer_doc\\employer_doc_003.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7988888888888889,
+        "text_length": 266,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 12.528973817825317,
+    "pages_count": 1
+  },
+  "data\\raw\\employer_doc\\employer_doc_004.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.8041935483870968,
+        "text_length": 266,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 13.626389265060425,
+    "pages_count": 1
+  },
+  "data\\raw\\employer_doc\\employer_doc_005.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.8063636363636364,
+        "text_length": 105,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 12.595826864242554,
+    "pages_count": 1
+  },
+  "data\\raw\\employer_doc\\employer_doc_006.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7709638554216868,
+        "text_length": 181,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 12.244093179702759,
+    "pages_count": 1
+  },
+  "data\\raw\\employer_doc\\employer_doc_007.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.8017948717948719,
+        "text_length": 168,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 12.537165403366089,
+    "pages_count": 1
+  },
+  "data\\raw\\employer_doc\\employer_doc_008.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.8306666666666667,
+        "text_length": 121,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 12.178064823150635,
+    "pages_count": 1
+  },
+  "data\\raw\\employer_doc\\employer_doc_009.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.8024528301886792,
+        "text_length": 116,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 12.293721914291382,
+    "pages_count": 1
+  },
+  "data\\raw\\employer_doc\\employer_doc_010.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7678082191780823,
+        "text_length": 163,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 13.168800354003906,
+    "pages_count": 1
+  },
+  "data\\raw\\identity_card\\identity_card_001.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.8004651162790698,
+        "text_length": 180,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 12.959647417068481,
+    "pages_count": 1
+  },
+  "data\\raw\\identity_card\\identity_card_002.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7824615384615384,
+        "text_length": 154,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 8.834873914718628,
+    "pages_count": 1
+  },
+  "data\\raw\\identity_card\\identity_card_003.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.7142857142857143,
+        "decision_path": "weighted_voting",
+        "rejected": false,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7852631578947369,
+        "text_length": 236,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 8.163274765014648,
+    "pages_count": 1
+  },
+  "data\\raw\\identity_card\\identity_card_004.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7816666666666667,
+        "text_length": 233,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 8.250648498535156,
+    "pages_count": 1
+  },
+  "data\\raw\\identity_card\\identity_card_005.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.8009433962264151,
+        "text_length": 223,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 8.325369596481323,
+    "pages_count": 1
+  },
+  "data\\raw\\identity_card\\identity_card_006.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7938679245283019,
+        "text_length": 226,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 9.03666067123413,
+    "pages_count": 1
+  },
+  "data\\raw\\identity_card\\identity_card_007.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.8115306122448979,
+        "text_length": 203,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 8.533888816833496,
+    "pages_count": 1
+  },
+  "data\\raw\\identity_card\\identity_card_008.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7681159420289855,
+        "text_length": 157,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 8.404351234436035,
+    "pages_count": 1
+  },
+  "data\\raw\\identity_card\\identity_card_009.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7968932038834952,
+        "text_length": 213,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 8.640021085739136,
+    "pages_count": 1
+  },
+  "data\\raw\\identity_card\\identity_card_010.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7873563218390806,
+        "text_length": 185,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 9.554896354675293,
+    "pages_count": 1
+  },
+  "data\\raw\\water_bill\\water_bill_001.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7924,
+        "text_length": 117,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 10.26301884651184,
+    "pages_count": 1
+  },
+  "data\\raw\\water_bill\\water_bill_002.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7938596491228069,
+        "text_length": 372,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 9.26006531715393,
+    "pages_count": 1
+  },
+  "data\\raw\\water_bill\\water_bill_003.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.7142857142857143,
+        "decision_path": "weighted_voting",
+        "rejected": false,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7768181818181819,
+        "text_length": 243,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 8.311753749847412,
+    "pages_count": 1
+  },
+  "data\\raw\\water_bill\\water_bill_004.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.7142857142857143,
+        "decision_path": "weighted_voting",
+        "rejected": false,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.8075652173913044,
+        "text_length": 244,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 8.379196405410767,
+    "pages_count": 1
+  },
+  "data\\raw\\water_bill\\water_bill_005.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.7142857142857143,
+        "decision_path": "weighted_voting",
+        "rejected": false,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.8087058823529412,
+        "text_length": 190,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 9.139729261398315,
+    "pages_count": 1
+  },
+  "data\\raw\\water_bill\\water_bill_006.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7470967741935484,
+        "text_length": 74,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 9.107898950576782,
+    "pages_count": 1
+  },
+  "data\\raw\\water_bill\\water_bill_007.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.76,
+        "text_length": 92,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 9.661940813064575,
+    "pages_count": 1
+  },
+  "data\\raw\\water_bill\\water_bill_008.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7760714285714286,
+        "text_length": 180,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 13.520653009414673,
+    "pages_count": 1
+  },
+  "data\\raw\\water_bill\\water_bill_009.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.35714285714285715,
+        "decision_path": "weighted_voting",
+        "rejected": true,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7789873417721519,
+        "text_length": 175,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 11.748703479766846,
+    "pages_count": 1
+  },
+  "data\\raw\\water_bill\\water_bill_010.pdf": {
+    "results": [
+      {
+        "predicted_class": "releve_bancaire",
+        "confidence": 0.7142857142857143,
+        "decision_path": "weighted_voting",
+        "rejected": false,
+        "cv_prediction": "releve_bancaire",
+        "cv_confidence": 0.7142857142857143,
+        "nlp_prediction": "releve_bancaire",
+        "nlp_confidence": 0.1,
+        "ocr_confidence": 0.7716666666666667,
+        "text_length": 144,
+        "template_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.7142857142857143,
+          "facture_electricite": 0.7142857142857143,
+          "facture_eau": 0.7142857142857143,
+          "document_employeur": 0.6
+        },
+        "pattern_scores": {
+          "identite": 0.0,
+          "releve_bancaire": 0.0,
+          "facture_electricite": 0.0,
+          "facture_eau": 0.0,
+          "document_employeur": 0.0
+        },
+        "page_number": 1
+      }
+    ],
+    "processing_time": 9.862462043762207,
+    "pages_count": 1
+  }
+}

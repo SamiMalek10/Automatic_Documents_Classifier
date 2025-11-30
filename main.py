@@ -11,7 +11,7 @@ from src.cv_module.template_detector import TemplateDetector
 from src.nlp_module.ocr_extractor import OCRExtractor
 from src.nlp_module.pattern_matcher import PatternMatcher
 from src.fusion.multimodal_fusion import MultimodalFusion
-from config.config import CLASSES, DATA_DIR
+from src.config.config import CLASSES, DATA_DIR
 
 # Configuration du logging
 logging.basicConfig(
@@ -141,13 +141,17 @@ class DocumentClassifier:
         input_path = Path(input_dir)
         output_path = Path(output_dir)
         
-        pdf_files = list(input_path.glob("*.pdf"))
+                # Recherche récursive de tous les PDFs dans input_dir et ses sous-dossiers
+        pdf_files = list(input_path.rglob("*.pdf"))
         
         if not pdf_files:
-            self.logger.warning("⚠️ Aucun PDF trouvé")
+            self.logger.warning("⚠️ Aucun PDF trouvé dans le dossier ou ses sous-dossiers")
             return
         
+        
         self.logger.info(f"📚 {len(pdf_files)} PDF(s) à traiter")
+        #for p in pdf_files:
+        #    self.logger.info(f"  - {p}")
         
         all_results = {}
         

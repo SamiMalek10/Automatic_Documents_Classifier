@@ -31,3 +31,4 @@ pytest>=6.2.0
 pytest-cov>=2.12.0
 
 sentencepiece>=0.2.1
+fpdf2>=2.8.5

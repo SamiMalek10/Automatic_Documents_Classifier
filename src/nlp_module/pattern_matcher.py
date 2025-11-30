@@ -1,7 +1,7 @@
 import re
 from collections import Counter
 import numpy as np
-from config.config import KEYWORDS, CLASSES
+from src.config.config import KEYWORDS, CLASSES
 
 class PatternMatcher:
     """Classification par motifs sémantiques"""
@@ -62,19 +62,21 @@ class PatternMatcher:
         
         return scores
     
+    
     def predict(self, text):
-        """Prédit la classe et retourne la confiance"""
+        """Prédit la classe et retourne la confiance + scores détaillés"""
         scores = self.compute_class_scores(text)
         
+        # Vérifie si tous les scores sont nuls
         if not scores or max(scores.values()) == 0:
-            return None, 0.0
+            # Retourne TOUJOURS 3 éléments, même en cas d'échec
+            return None, 0.0, {cls: 0.0 for cls in self.classes}
         
         # Classe avec le score max
         predicted_class = max(scores, key=scores.get)
         confidence = scores[predicted_class]
         
         return predicted_class, confidence, scores
-    
     def extract_specific_patterns(self, text):
         """Extrait des patterns spécifiques (montants, dates, unités)"""
         patterns = {
